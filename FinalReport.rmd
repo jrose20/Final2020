@@ -38,6 +38,13 @@ According to this graph we can say that the group of guys taking the drug were m
 ```{r}
 galData <- filter(FinalData,sex=="gal")
 ```
+```{r}
+barchartGC(~infected + treatment,data=galData)
+barchartGC(~infected + treatment,data=galData, type="percent")
+
+```
+
+The drug appears to have been more effective in terms of avoiding COVID infection for the gals than it was for the guys. We can support this statement by looking at the results shown above. According to said data it appears that almost 35 more gals who were taking the placebo were being infected as compared to the 35 gals who were taking the drug. The data clearly illustrates that the gals who were taking the drug were less likely to catch  as the ones taking the placebo therefore the drug is more effective for the gals. 
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
