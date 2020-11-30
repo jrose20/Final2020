@@ -56,6 +56,16 @@ barchartGC(~infected + treatment,data=galData, type="percent")
 
 The drug appears to have been more effective in terms of avoiding COVID infection for the gals than it was for the guys. We can support this statement by looking at the results shown above. According to said data it appears that almost 35 more gals who were taking the placebo were being infected as compared to the 35 gals who were taking the drug. The data clearly illustrates that the gals who were taking the drug were less likely to catch  as the ones taking the placebo therefore the drug is more effective for the gals. 
 
+### Numerical Summaries for Gals  
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=galData)
+rowPerc(table1)
+colPerc(table1)
+```
+
+33% of the gals were infected while taking the drug and 67% of them were on the placebo. 
+
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
 # Drug Users
@@ -70,6 +80,16 @@ barchartGC(~infected + treatment,data=DrugData, type="percent")
 
 The drug appears to be working as well for the drug users as it did for the gals. The graph illustrtates and almost identical depiction for the drug users taking the drug as it showed for the gals taking the drug. More specifically we can say that 65 drug users who were taking the placebo were actually the ones who caught COVID while the drug users who were taking the drug were half as likely to catch it. 
 
+### Numerical Summaries for Drug Users  
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=DrugData)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The percentage of the drug users that were infected were 33% while the placebo was 67%.
+
 # LGBTQ
 ```{r}
 lgbtqData <- filter(FinalData,LGBTQ=="gay")
@@ -81,6 +101,16 @@ barchartGC(~infected + treatment,data=lgbtqData, type="percent")
 ```
 
 According to this graph more than twice the people whom have taken the drug have ended up catching COVID. Therefore this drug is not beneficial for the lgbtq community in terms of preventing the COVID infection. 
+
+### Numerical Summaries for LGBTQ  
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=lgbtqData)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The percentage of people within the lgbtq community who were infected was around 71% while the placebo was around 29%.
 
 # Discussion and Conclusion
 
