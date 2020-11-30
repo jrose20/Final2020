@@ -110,6 +110,16 @@ colPerc(table1)
 
 The percentage of the drug users that were infected were 33% while the placebo was 67%.
 
+## Inferential for drug users
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The odds of you getting a COVID if you are a drug user are about .55:1.
+
 # LGBTQ
 ```{r}
 lgbtqData <- filter(FinalData,LGBTQ=="gay")
@@ -131,6 +141,16 @@ colPerc(table1)
 ```
 
 The percentage of people within the lgbtq community who were infected was around 71% while the placebo was around 29%.
+
+## Inferential for LGBTQ 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The odds of someone who is apart of the LGBTQ community catching COVID while taking the drug are at about 2.5:1.
 
 # Discussion and Conclusion
 
