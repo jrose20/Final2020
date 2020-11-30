@@ -64,6 +64,13 @@ The drug appears to be working as well for the drug users as it did for the gals
 ```{r}
 lgbtqData <- filter(FinalData,LGBTQ=="gay")
 ```
+```{r}
+barchartGC(~infected + treatment,data=lgbtqData)
+barchartGC(~infected + treatment,data=lgbtqData, type="percent")
+
+```
+
+According to this graph more than twice the people whom have taken the drug have ended up catching COVID. Therefore this drug is not beneficial for the lgbtq community in terms of preventing the COVID infection. 
 
 # Discussion and Conclusion
 
