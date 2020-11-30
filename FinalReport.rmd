@@ -50,7 +50,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The odds of a guy catching COVID if he takes the drug are three and a half times more likely than that if he is taking the placebo. 
+The odds of a guy catching COVID if he takes the drug are one and a half times more likely than that if he is taking the placebo. 
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
@@ -75,6 +75,16 @@ colPerc(table1)
 ```
 
 33% of the gals were infected while taking the drug and 67% of them were on the placebo. 
+
+##Inferential for the gals 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The odds of catching COVID if you area gal taking the drug are about 5:1
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
