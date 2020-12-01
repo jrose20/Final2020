@@ -30,7 +30,7 @@ barchartGC(~infected + treatment,data=guysData, type="percent")
 
 ```
 
-According to this graph we can say that the group of guys taking the drug were more likely to have caught COVID than the guys taking the placebo. This chart illustrates that the guys who were taking the drug were actually 20 times more likely to be infected than the guys taking the placebo. Therefor we can state that this was not a good drug in terms of preventing the infection of COVID.
+According to this graph we can say that the group of guys taking the drug were more likely to have caught COVID than the guys taking the placebo. This chart illustrates that the guys who were taking the drug were actually 20 times more likely to be infected than the guys taking the placebo. Therefor we can state that this was not a good drug in terms of preventing the infection of COVID for guys.
 
 ### Numerical Summaries for Guys  
 
@@ -76,7 +76,7 @@ colPerc(table1)
 
 33% of the gals were infected while taking the drug and 67% of them were on the placebo. 
 
-##Inferential for the gals 
+## Inferential for the gals 
 
 ```{r}
 chisq.test(table1)
@@ -84,7 +84,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The odds of catching COVID if you area gal taking the drug are about 5:1
+The odds of catching COVID if you are a gal taking the drug are about 5:1
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
@@ -98,7 +98,7 @@ barchartGC(~infected + treatment,data=DrugData, type="percent")
 
 ```
 
-The drug appears to be working as well for the drug users as it did for the gals. The graph illustrtates and almost identical depiction for the drug users taking the drug as it showed for the gals taking the drug. More specifically we can say that 65 drug users who were taking the placebo were actually the ones who caught COVID while the drug users who were taking the drug were half as likely to catch it. 
+The drug appears to be working as well for the drug users as it did for the gals. The graph illustrates and almost identical depiction for the drug users taking the drug as it showed for the gals taking the drug. More specifically we can say that 65 drug users who were taking the placebo were actually the ones who caught COVID while the drug users who were taking the drug were half as likely to catch it. 
 
 ### Numerical Summaries for Drug Users  
 
@@ -118,7 +118,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The odds of you getting a COVID if you are a drug user are about .55:1.
+The odds of you getting COVID if you are a drug user are about .55:1.
 
 # LGBTQ
 ```{r}
@@ -154,6 +154,14 @@ The odds of someone who is apart of the LGBTQ community catching COVID while tak
 
 # Discussion and Conclusion
 
+If I were a doctor and I had a male patient come in requesting to take this drug as a vaccine for COVID I would highly recommend against him taking it. I would let him know that based off of a study between a group of guys who were taking said drug along with a similar group of guys taking a placebo, that 58% of the guys taking the drug were more likely to catch COVID rather than the ones taking the placebo.I would inform him that the odds of a guy catching COVID if he takes the drug are one and a half times more likely than that if he is taking the placebo. 
+
+If a woman came in requesting the same situation I would ask her if she felt comfortable with me prescribing her this drug. As this study showed that this drug was effective for woman more so than it was for men. In fact the study illustrated that the odds of catching COVID if you are a gal taking the drug are about 5:1. 
+
+If someone who was a drug user came in asking about a vaccine for COVID I would inform them as well about this possible treatment. I would explain how the study was done between two groups of likely people, one of which who were taking said drug while the other group were taking a placebo. For those who were actually taking the drug saw a higher benefit than those who were taking the placebo. The percentage of the drug users that were infected were 33% while the placebo was 67%. Which goes to show that the rate of people infected were higher on the side of the placebo.
+
+I would advise some who was apart of the LGBTQ community against taking this drug as it didn't seem to help these people much at all. The odds of someone who is apart of the LGBTQ community catching COVID while taking the drug are at about 2.5:1, that means the odds of this person catching COVID while taking the drug are much higher. It was almost better for those who were taking the placebo compared to those actually taking the drug. In fact, the percentage of people within the lgbtq community who were infected was around 71% while the placebo was around 29%.
+
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-
+It is important to note that those who were more severely at risk for taking the drug but still catching COVID were not highly related. We might need to impose more studies to decide how many guys/gals were apart of the lgbtq test in comparison to the drug user test. As this could effect the numbers considering guys were more likely to have caught COVID out of the two sex groups. The studies results could have projected a slightly different outcome if the ages of each sex played a roll, or even what drug the drug users were using prior as some drugs affect your immunity. Aside from these tedious details there were not heavy relationships influencing the results of each groups in which we tested the drug for. 
